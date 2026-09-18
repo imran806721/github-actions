@@ -50,8 +50,8 @@ jobs: # stages
         run: |
           echo "Image version: ${{ needs.first-job.outputs.version }}"
 
-  # third-job:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: parellel job
-  #       run: echo "this is parellel job"
+  third-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: parellel job
+        run: echo "this is parellel job"
